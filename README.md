@@ -77,6 +77,14 @@ The goal of this project is to classify sonar returns from mines (0) and rocks (
 
 2. **GridSearchCV for Random Forest**:
    - Tuned hyperparameters for the Random Forest model using `GridSearchCV()`.
+   - ```
+     GridSearchCV(cv=5, estimator=RandomForestClassifier(), n_jobs=-1,
+             param_grid={'max_depth': array([11, 12, 13, 14]),
+                         'min_samples_leaf': array([2, 3]),
+                         'min_samples_split': array([2, 3]),
+                         'n_estimators': array([22, 23, 24, 25, 26])},
+             verbose=6)
+     ```
 
 ## Results
 
